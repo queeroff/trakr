@@ -60,6 +60,15 @@ a:hover {
  
 }
 
+h4 {
+	font-family: poplar-std, sans-serif;
+font-style: normal;
+    color: #f2ede3;    
+    font-size: 400%;
+
+
+}
+
 .bl-main {
 	position: absolute;
 	width: 100%;
@@ -145,6 +154,13 @@ a:hover {
 
 
 h5 { 
+  font-family: basic-sans, sans-serif;
+  font-size: 120%;
+  font-weight: 700;
+  font-style: normal;
+  }
+
+.text { 
   font-family: basic-sans, sans-serif;
   font-size: 120%;
   font-weight: 700;
@@ -245,7 +261,7 @@ div.bl-panel-items > div > div {
 }
 
 .bl-content h2 {
-	font-size: 600%;
+	font-size: 500%;
 	font-weight: 30;
 	margin: 0 0 20px 0;
 }
@@ -402,6 +418,99 @@ div.bl-panel-items > div.bl-hide-current-work {
 	z-index: 0;
 }
 
+
+
+/* DivTable.com */
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 0px solid #999999;
+	display: table-cell;
+	padding: 0px 0px;
+	position: absolute;
+	left: 160px;
+
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+.dashboard_button_Container {
+  width: 100%;
+  user-select: none;
+}
+
+.dashboard_button_SmallScreen {
+  background: #ff3333;
+  border: solid #ffff 5px;
+  border-radius: 10px;
+  cursor:pointer;
+  
+  color: white;
+  height: 53px;
+  width:70%;
+  box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.35);
+  user-select: none;
+ }
+.dashboard_button_SmallScreen:hover {
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0);
+  transform: translate(2px, 2px);
+  border: solid #edeae3 5px;
+  user-select: none;
+}
+.dashboard_button_SmallScreen:hover p{
+  color: #edeae3;
+  user-select: none;
+}
+
+.dashboard_button_SmallScreen:active {
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0);
+  transform: translate(2px, 2px);
+  border: solid #edeae3 5px;
+  user-select: none;
+}
+.dashboard_button_SmallScreen:active p{
+  color: #edeae3;
+}
+
+.dashboard_button_Text {
+	
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  user-select: none;
+}
+
+--------
+.disable-select {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
+
+
+
 /* Transition classes and properties */
 /* Separated for a better overview and control */
 
@@ -475,6 +584,24 @@ section.bl-expand .bl-box {
 	-webkit-transition: opacity 0.1s linear 0s;
 	-moz-transition: opacity 0.1s linear 0s;
 	transition: opacity 0.1s linear 0s;
+
+}
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 section.bl-expand .bl-content,
@@ -500,3 +627,6 @@ section.bl-expand .bl-icon-close {
 		width: 40%;
 	}
 border-image: 
+
+
+
